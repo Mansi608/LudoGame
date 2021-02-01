@@ -1,0 +1,30 @@
+*{ 
+    margin:0;padding:0;
+    font-family:'Acme',sans-serif;
+}
+body{
+    background-color: rgba(0, 70, 128, 0.788);
+}
+.heading{
+    widows: 4px;margin:50%;margin:auto;text-align:center;
+
+}
+.dice{
+    text-align:center; display:inline-block;
+}
+h1{
+    margin:30px;text-shadow:3px 3px white;
+    font-size:4rem;
+    color:#f6b93b;
+}
+p{
+    font-size: 2rem; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;color:rgba(4, 11, 31, 0.781);
+    text-decoration:wavy;text-shadow: 1px 1px white;
+
+}
+button{
+    padding:11px;
+    background-color: #00b8b8;
+    color:white;
+    border:none;
+}

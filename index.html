@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+<link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet"></head>
+<body>
+<div class="heading">
+    <h1> Javascript LUDO</h1>
+    <div class="dice">
+        <p>Player 1</p>
+        <img src="dice6.jpg" id="check1" width="230" height="200">
+    </div>
+    <div class="dice">
+        <p>Player 2</p>
+        <img src="dice1.jpg" id="check2" width="230" height="200">
+    </div>
+    <div>
+        <button onclick="ludogame()">Click Me</button>
+        </div>
+    </div>
+    <script>
+        ludogame =() =>{
+        const p1=Math.floor(Math.random()*6)+1;
+        const playdice1=`dice${p1}.jpg`;
+        document.getElementById('check1').setAttribute('src',playdice1);
+        const p2=Math.floor(Math.random()*6)+1;
+        const playdice2=`dice${p2}.jpg`;
+        document.getElementById('check2').setAttribute('src',playdice2);
+    if(p1>p2){
+        document.querySelector('h1').innerHTML="Player1 won :)";
+    }
+    else if(p2>p1){
+        document.querySelector('h1').innerHTML="Player2 won :)";
+    }
+    else {
+    
+        document.querySelector('h1').innerHTML="DRAW !";
+    }
+    }
+
+        </script>
+    
+</body>
+</html>
